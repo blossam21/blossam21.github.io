@@ -4,12 +4,81 @@
  <head>
   <title>Wag Adoption Form</title>
   <style>
-   h1 {
-       text-align: center;
-      }
+   h1   {
+         text-align: center;
+        }
+   #one {
+         text-align: center;
+        }
   </style>
  </head>
  <body>
   <h1>WAG ADOPTION FORM</h1>
+   <form name="Adoption">
+    <div id="one">
+    Welcome to the adoption form page of <b>Wag Adoption</b>! Please fill out this form in its entirety.
+    </div>
+  <h2>APPLICANT INFO</h2>
+   <table border=1>
+    <tr>
+     <td>Name:</td>
+     <td><input type=text name="Name" size=40></td>
+    </tr>
+    <tr>
+     <td>Address:</td>
+     <td><input type=text name="Address" size=40></td>
+    </tr>
+    <tr>
+     <td>Phone Number:</td>
+     <td><input type=text name="PhoneNumber" size=40></td>
+    </tr>
+    <tr>
+     <td>Email:</td>
+     <td><input type=text name="Email" size=40></td>
+    </tr>
+   </table>
+  <br>
+ <h2>DELIVERY OPTIONS</h2>
+  <input type=radio name="Location">Delivery
+  <input type=radio name="Location">Pickup
+  <input type=radio name="Location">Dine-in
+  <br>
+  <textarea name="Instructions" rows=4 cols=50>Enter delivery instructions here.</textarea>
+  <br>
+  <br>
+ <h2>PANCAKES</h2>
+  <h3>Batter</h3>
+   <input type=radio name="Batter">Original<br>
+   <input type=radio name="Batter">Protein Mix<br>
+   <input type=radio name="Batter">Low-Cal
+   <br>
+  <h3>Add-Ins</h3>
+   <input type=radio name="AddIns">Pecans<br>
+   <input type=radio name="AddIns">Blueberries<br>
+   <input type=radio name="AddIns">Strawberries<br>
+   <input type=radio name="AddIns">Raspberries<br>
+   <input type=radio name="AddIns">None
+   <br>
+  <h3>Quantity</h3>
+   <SELECT NAME="Quantity" id="Number">
+   <option>1</option>
+   <option>2</option>
+   <option>3</option>
+   <option>4</option>
+   </SELECT>
+   <br>
+  <h3>Toppings</h3>
+   <input type=checkbox name="Toppings">Butter<br>
+   <input type=checkbox name="Toppings">Whipped Cream<br>
+   <input type=checkbox name="Toppings">Maple Syrup<br>
+   <input type=checkbox name="Toppings">Blueberries<br>
+   <input type=checkbox name="Toppings">Strawberries<br>
+   <input type=checkbox name="Toppings">Raspberries
+   <br>
+   <br>
+ <h2>Thank you for your order!</h2>
+  <textarea name="Instructions" rows=4 cols=50>Enter special instructions here.</textarea><br>
+  <input type="submit" value="Submit Form">
+  <input type="reset" value="Clear">
  </body>
 </html>
