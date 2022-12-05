@@ -5,10 +5,15 @@
   <title>Wag Adoption Form</title>
   <style>
    h1   {
+         color: blue;
          text-align: center;
         }
    #one {
+         color: grey;
          text-align: center;
+        }
+   body {
+         background-color: lightyellow;
         }
   </style>
  </head>
@@ -16,7 +21,7 @@
   <h1>WAG ADOPTION FORM</h1>
    <form name="Adoption">
     <div id="one">
-    Welcome to the adoption form page of <b>Wag Adoption</b>! Please fill out this form in its entirety.
+    Welcome to the adoption form page of <b>Wag Adoption</b>! <i>Please fill out this form in its entirety.</i>
     </div>
   <h2>APPLICANT INFO</h2>
    <table border=1>
@@ -50,50 +55,103 @@
    <input type=radio name="Rent">Yes
    <input type=radio name="Rent">No
    <br>
-
-
-
-
-
-
-
-
-   <textarea name="Instructions" rows=4 cols=50>Enter delivery instructions here.</textarea>
+   <br>
+  <h2>GENERAL QUESTIONS</h2>
+   Why do you want to adopt this pet?<br>
+   <input type=checkbox name="Reason">companion for child<br>
+   <input type=checkbox name="Reason">companion for other dog<br>
+   <input type=checkbox name="Reason">companion for self<br>
+   <input type=checkbox name="Reason">security<br>
+   <input type=checkbox name="Reason">house pet<br>
+   <input type=checkbox name="Reason">working dog<br>
+   <input type=checkbox name="Reason">other<br>
+   <br>
+   <textarea name="Reason" rows=4 cols=50>If other, please explain ...</textarea>
    <br>
    <br>
- <h2>PANCAKES</h2>
-  <h3>Batter</h3>
-   <input type=radio name="Batter">Original<br>
-   <input type=radio name="Batter">Protein Mix<br>
-   <input type=radio name="Batter">Low-Cal
+   List all <b>current animals</b> <u>and</u> <b>animals you have had</b> in the last 10 years.<br>
+   <table border=1>
+    <tr>
+     <td>Name</td>
+     <td>Breed</td>
+     <td>Sex</td>
+     <td>Spayed/Neutered</td>
+     <td>Current on vaccinations?</td>
+     <td>Do you still own it? If not, why?</td>
+    </tr>
+    <tr>
+     <td><input type=text name="PetName" size=20></td>
+     <td><input type=text name="PetBreed" size=20></td>
+     <td><input type=text name="PetSex" size=20></td>
+     <td><input type=text name="PetSN" size=20></td>
+     <td><input type=text name="PetVacc" size=20></td>
+     <td><input type=text name="PetOwn" size=40></td>
+    </tr>
+    <tr>
+     <td><input type=text name="PetName" size=20></td>
+     <td><input type=text name="PetBreed" size=20></td>
+     <td><input type=text name="PetSex" size=20></td>
+     <td><input type=text name="PetSN" size=20></td>
+     <td><input type=text name="PetVacc" size=20></td>
+     <td><input type=text name="PetOwn" size=40></td>
+    </tr>
+    <tr>
+     <td><input type=text name="PetName" size=20></td>
+     <td><input type=text name="PetBreed" size=20></td>
+     <td><input type=text name="PetSex" size=20></td>
+     <td><input type=text name="PetSN" size=20></td>
+     <td><input type=text name="PetVacc" size=20></td>
+     <td><input type=text name="PetOwn" size=40></td>
+    </tr>
+    <tr>
+     <td><input type=text name="PetName" size=20></td>
+     <td><input type=text name="PetBreed" size=20></td>
+     <td><input type=text name="PetSex" size=20></td>
+     <td><input type=text name="PetSN" size=20></td>
+     <td><input type=text name="PetVacc" size=20></td>
+     <td><input type=text name="PetOwn" size=40></td>
+    </tr>
+    <tr>
+     <td><input type=text name="PetName" size=20></td>
+     <td><input type=text name="PetBreed" size=20></td>
+     <td><input type=text name="PetSex" size=20></td>
+     <td><input type=text name="PetSN" size=20></td>
+     <td><input type=text name="PetVacc" size=20></td>
+     <td><input type=text name="PetOwn" size=40></td>
+    </tr>
+    <tr>
+     <td><input type=text name="PetName" size=20></td>
+     <td><input type=text name="PetBreed" size=20></td>
+     <td><input type=text name="PetSex" size=20></td>
+     <td><input type=text name="PetSN" size=20></td>
+     <td><input type=text name="PetVacc" size=20></td>
+     <td><input type=text name="PetOwn" size=40></td>
+    </tr>
+    <tr>
+     <td><input type=text name="PetName" size=20></td>
+     <td><input type=text name="PetBreed" size=20></td>
+     <td><input type=text name="PetSex" size=20></td>
+     <td><input type=text name="PetSN" size=20></td>
+     <td><input type=text name="PetVacc" size=20></td>
+     <td><input type=text name="PetOwn" size=40></td>
+    </tr>
+    <tr>
+     <td><input type=text name="PetName" size=20></td>
+     <td><input type=text name="PetBreed" size=20></td>
+     <td><input type=text name="PetSex" size=20></td>
+     <td><input type=text name="PetSN" size=20></td>
+     <td><input type=text name="PetVacc" size=20></td>
+     <td><input type=text name="PetOwn" size=40></td>
+    </tr>
+   </table>
+
+
    <br>
-  <h3>Add-Ins</h3>
-   <input type=radio name="AddIns">Pecans<br>
-   <input type=radio name="AddIns">Blueberries<br>
-   <input type=radio name="AddIns">Strawberries<br>
-   <input type=radio name="AddIns">Raspberries<br>
-   <input type=radio name="AddIns">None
-   <br>
-  <h3>Quantity</h3>
-   <SELECT NAME="Quantity" id="Number">
-   <option>1</option>
-   <option>2</option>
-   <option>3</option>
-   <option>4</option>
-   </SELECT>
-   <br>
-  <h3>Toppings</h3>
-   <input type=checkbox name="Toppings">Butter<br>
-   <input type=checkbox name="Toppings">Whipped Cream<br>
-   <input type=checkbox name="Toppings">Maple Syrup<br>
-   <input type=checkbox name="Toppings">Blueberries<br>
-   <input type=checkbox name="Toppings">Strawberries<br>
-   <input type=checkbox name="Toppings">Raspberries
-   <br>
-   <br>
- <h2>Thank you for your order!</h2>
-  <textarea name="Instructions" rows=4 cols=50>Enter special instructions here.</textarea><br>
+ <h2>Thank you!</h2>
   <input type="submit" value="Submit Form">
   <input type="reset" value="Clear">
+  <br>
+  <br>
+  <br>
  </body>
 </html>
